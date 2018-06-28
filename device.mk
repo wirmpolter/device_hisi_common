@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.hi3660.rc \
-    init.hi3660.rr.rc
+    init.hi3660.environ.rc
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
