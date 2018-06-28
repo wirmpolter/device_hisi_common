@@ -1,3 +1,6 @@
+on init
+    mount none /system/bin/adbd /sbin/adbd bind
+
 on boot
     # Toucscreen glove mode
     chmod 0664 /sys/touchscreen/touch_glove
