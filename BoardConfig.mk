@@ -43,10 +43,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := exfat
 
-# Lineage hardware
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/lineagehw
-
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
