@@ -17,7 +17,7 @@
 
 include build/make/target/board/treble_common.mk
 
-DEVICE_PATH := device/honor/stf
+DEVICE_PATH := device/huawei/mha
 
 # Architecture
 TARGET_ARCH := arm64
@@ -52,7 +52,7 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/honor/stf/sepolicy
+    device/huawei/mha/sepolicy
 
 # System size
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4915724288	# 4.8 GB

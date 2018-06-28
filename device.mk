@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/honor/stf/stf-vendor.mk)
+$(call inherit-product-if-exists, vendor/huawei/mha/mha-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 

@@ -15,5 +15,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo rr_stf-userdebug
+add_lunch_combo rr_mha-userdebug
 
