@@ -84,9 +84,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.adb.secure=1
-
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/ld.config.compat.txt:system/etc/ld.config.compat.txt \
