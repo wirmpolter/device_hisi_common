@@ -16,23 +16,21 @@
 #
 
 $(call inherit-product, $(LOCAL_PATH)/pre-base.mk)
-$(call inherit-product-if-exists, vendor/google/gapps.mk)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 $(call inherit-product, $(LOCAL_PATH)/full_mha.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
-
-RR_BUILDTYPE = OpenKirin
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := rr_mha
+PRODUCT_NAME := aosip_mha
 PRODUCT_DEVICE := mha
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Mate-9
+PRODUCT_MANUFACTURER := Huawei
 
 # Override device name
 PRODUCT_BUILD_PROP_OVERRIDES += \
