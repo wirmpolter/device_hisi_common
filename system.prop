@@ -6,5 +6,10 @@ ro.config.vc_call_vol_steps=7
 # Make sdcards visibile in StorageManager
 persist.sys.adoptable_fbe=true
 
+# MediaCodec
+persist.sys.google_avc_enc=0
+persist.sys.sr_google_avc_enc=1
+persist.debug.wfd.enable=0
+
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
