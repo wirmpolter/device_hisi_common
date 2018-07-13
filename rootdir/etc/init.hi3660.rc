@@ -1,3 +1,6 @@
+on init
+    mount none /system/usr/keylayout/fingerprint.kl /vendor/usr/keylayout/fingerprint.kl bind
+
 on boot
     # Toucscreen glove mode
     chmod 0664 /sys/touchscreen/touch_glove
