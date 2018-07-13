@@ -38,14 +38,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     qemu.hw.mainkeys=1
 
-# FPS
-PRODUCT_PACKAGES += \
-    hw-fpnav-daemon
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/system/bin/hw-fpnav:system/bin/hw-fpnav \
-    $(LOCAL_PATH)/prebuilt/system/etc/hw-fpnav.dex:system/etc/hw-fpnav.dex
-
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
