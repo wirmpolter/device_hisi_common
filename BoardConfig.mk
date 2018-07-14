@@ -47,6 +47,9 @@ TARGET_EXFAT_DRIVER := exfat
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
 
+# Charger
+HEALTHD_ENABLE_HUAWEI_FASTCHG_CHECK := true
+
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
