@@ -87,8 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    qti-telephony-common \
-    telephony-ext
+    qti-telephony-common
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
