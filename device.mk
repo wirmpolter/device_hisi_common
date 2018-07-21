@@ -34,10 +34,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     libion
 
-# Disable nav key
-PRODUCT_PROPERTY_OVERRIDES += \
-    qemu.hw.mainkeys=1
-
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
