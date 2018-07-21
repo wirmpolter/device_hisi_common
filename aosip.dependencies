@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "wirmpolter/vendor_huawei_mha",
+    "target_path": "vendor/huawei/mha",
+    "branch": "8.1"
+  }
+]
