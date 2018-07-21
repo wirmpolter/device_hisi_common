@@ -17,9 +17,9 @@
 
 $(call inherit-product-if-exists, vendor/huawei/mha/mha-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosip
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-aosip \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
