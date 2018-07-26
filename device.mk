@@ -104,9 +104,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.sdcardfs.emulated=0 \
     persist.sys.sdcardfs.public=0
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.adb.secure=1
-
 # Shims
 PRODUCT_PACKAGES += \
     libshims_hisupl

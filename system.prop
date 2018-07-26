@@ -1,3 +1,6 @@
+# ADB
+ro.adb.secure=1
+
 # Audio
 audio.deep_buffer.media=true
 ro.config.media_vol_steps=25
