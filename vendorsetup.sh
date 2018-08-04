@@ -15,5 +15,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosip_mha-userdebug
+add_lunch_combo havoc_mha-userdebug
 
