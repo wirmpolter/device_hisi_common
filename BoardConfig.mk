@@ -64,3 +64,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # System size
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4915724288	# 4.8 GB
+
+ # Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/bin/hw/vendor.huawei.hardware.hisupl@1.0-service|libshims_hisupl.so

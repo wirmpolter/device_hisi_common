@@ -1,5 +1,4 @@
 on init
-    mount none /dev/null /vendor/etc/init/vendor.huawei.hardware.hisupl@1.0-service.rc bind
     mount none /system/usr/keylayout/fingerprint.kl /vendor/usr/keylayout/fingerprint.kl bind
 
 on property:sys.boot_completed=1
@@ -7,8 +6,3 @@ on property:sys.boot_completed=1
     write /sys/class/hw_power/charger/charge_data/iin_thermal 2000
     stop displayengine-hal-1-0
 
-service hisupl_service /vendor/bin/hw/vendor.huawei.hardware.hisupl@1.0-service
-    class hal
-    user system
-    group system
-    setenv LD_PRELOAD libshims_hisupl.so
