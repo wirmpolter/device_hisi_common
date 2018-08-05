@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/huawei/mha/mha-vendor.mk)
+$(call inherit-product, vendor/huawei/kirin960-common/kirin960-common-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
