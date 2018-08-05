@@ -17,7 +17,7 @@
 
 include build/make/target/board/treble_common.mk
 
-DEVICE_PATH := device/huawei/mha
+VENDOR_PATH := device/huawei/kirin960-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -38,29 +38,29 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := exfat
 
 # Lineage hardware
 BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/lineagehw
+    $(VENDOR_PATH)/lineagehw
 
 # Charger
 HEALTHD_ENABLE_HUAWEI_FASTCHG_CHECK := true
 
 # Properties
-TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
 # Release tools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
 
 # Radio
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
 
 # System size
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4915724288	# 4.8 GB
