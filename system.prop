@@ -19,3 +19,5 @@ debug.hwui.profile=true
 
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
+
+ro.build.version.security_patch_sys=2018-07-05
