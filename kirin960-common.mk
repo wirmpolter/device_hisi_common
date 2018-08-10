@@ -34,6 +34,14 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     libion
 
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="MHA-L29-user 8.0.0 HUAWEIMHA-L29 362(C636) release-keys" \
+    BUILD_FINGERPRINT="HUAWEI/MHA-L29/HWMHA:8.0.0/HUAWEIMHA-L29/362(C636):user/release-keys"
+
+# GMS Client ID
+PRODUCT_GMS_CLIENTID_BASE := android-huawei
+
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
