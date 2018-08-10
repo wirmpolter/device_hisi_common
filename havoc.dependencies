@@ -1,0 +1,7 @@
+[
+  {
+    "repository":  "wirmpolter/vendor_hisi_common",
+    "target_path": "vendor/hisi/common",
+    "branch": "8.1"
+  }
+]
