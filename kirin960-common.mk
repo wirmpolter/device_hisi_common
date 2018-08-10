@@ -120,6 +120,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libshims_hisupl
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/ld.config.compat.txt:system/etc/ld.config.compat.txt \
