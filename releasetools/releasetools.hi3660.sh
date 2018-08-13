@@ -33,6 +33,10 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
     echo "(roletype object_r displayengine_hwservice)" >> /system/etc/selinux/plat_sepolicy.cil
     echo "(typeattributeset displayengine_hwservice_26_0 (displayengine_hwservice))" >> /system/etc/selinux/mapping/26.0.cil
 
+    # Copy over vendor media_codecs.xml and disable unwanted HW codecs
+    cp /vendor/etc/media_codecs.xml /system/etc/media_codecs.xml
+    sed -i "s/<MediaCodec name=\"OMX.hisi.video.decoder.avc\" type=\"video\/avc\" >/<MediaCodec name=\"OMX.hisi.video.decoder.avc\" type=\"video\/no-avc\" >/g" /system/etc/media_codecs.xml
+
     # Disable parsing intra-refresh-mode parameter in libstagefright
     sed -i 's/intra-refresh-mode/intra-refresh-nope/' /system/lib64/libstagefright.so
     sed -i 's/intra-refresh-mode/intra-refresh-nope/' /system/lib/libstagefright.so
