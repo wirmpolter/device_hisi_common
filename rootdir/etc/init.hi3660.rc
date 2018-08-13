@@ -1,5 +1,6 @@
 on init
     mount none /system/usr/keylayout/fingerprint.kl /vendor/usr/keylayout/fingerprint.kl bind
+    mount none /system/etc/media_codecs.xml /vendor/etc/media_codecs.xml bind
 
 on property:sys.boot_completed=1
     write /sys/class/hw_power/charger/direct_charger/iin_thermal 4000
