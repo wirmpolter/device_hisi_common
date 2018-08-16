@@ -98,7 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # Release tools
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/releasetools.hi3660.sh:system/bin/releasetools.hi3660.sh
+    $(LOCAL_PATH)/releasetools/releasetools.hi3660.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/releasetools.hi3660.sh
 
 # APN
 PRODUCT_COPY_FILES += \
