@@ -1,1 +1,1 @@
-type proc_bootdevice_name, fs_type, proc_type;
+type proc_bootdevice, fs_type, proc_type;
