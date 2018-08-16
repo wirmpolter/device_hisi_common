@@ -22,9 +22,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
+# APN configs
+ifneq ($(TARGET_AOSP_BASED),)
+PRODUCT_COPY_FILES += \
+        device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+endif
+
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay 
+
+ifeq ($(TARGET_AOSP_BASED),)
+DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
+endif
 
 # Device init scripts
 PRODUCT_PACKAGES += \
@@ -90,10 +101,6 @@ PRODUCT_COPY_FILES += \
 # Release tools
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/releasetools.hi3660.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/releasetools.hi3660.sh
-
-# APN
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
