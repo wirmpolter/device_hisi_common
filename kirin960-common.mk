@@ -61,19 +61,10 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    Tag
-
-PRODUCT_PACKAGES += \
     NfcNci \
+    Tag \
+    com.android.nfc_extras \
     nfc_nci.pn54x.default
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/prebuilt/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \
