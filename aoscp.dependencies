@@ -1,0 +1,7 @@
+[
+  {
+    "repository":  "wirmpolter/proprietary_vendor_hisi-common",
+    "target_path": "vendor/hisi/common",
+    "branch": "pie"
+  }
+]
