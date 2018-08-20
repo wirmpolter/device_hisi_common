@@ -32,11 +32,6 @@ endif
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay 
 
-ifeq ($(TARGET_AOSP_BASED),)
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-endif
-
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.hi3660.rc \
@@ -115,10 +110,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Shims
 PRODUCT_PACKAGES += \
     libshims_hisupl
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # VNDK
 PRODUCT_COPY_FILES += \
