@@ -43,12 +43,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := exfat
 
-ifeq ($(TARGET_AOSP_BASED),)
-# Lineage hardware
-BOARD_HARDWARE_CLASS += \
-    $(VENDOR_PATH)/lineagehw
-endif
-
 # Charger
 HEALTHD_ENABLE_HUAWEI_FASTCHG_CHECK := true
 
