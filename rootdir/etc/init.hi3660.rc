@@ -5,6 +5,14 @@ on init
 on post-fs-data
     mkdir /data/vendor_ce 0771 root root
     mkdir /data/vendor_de 0771 root root
+     mkdir /data/system_ce 0771 root root
+     mkdir /data/misc_ce 0771 root root
+     mkdir /data/misc_ce/0 0771 root root
+     mkdir /data/media/0 0771 root root
+     mkdir /data/system_ce/0 0771 root root
+
+on property:sys.boot_completed=1 
+	stop incidentd
 
 on property:sys.boot_completed=1
     write /sys/class/hw_power/charger/direct_charger/iin_thermal 4000

@@ -16,6 +16,7 @@ persist.debug.wfd.enable=0
 
 # HWUI
 debug.hwui.profile=true
+debug.hwc.max_hw_overlays=0
 
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60

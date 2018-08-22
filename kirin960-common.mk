@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # APN configs
 ifneq ($(TARGET_AOSP_BASED),)
@@ -92,10 +92,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
   $(LOCAL_PATH)/configs/gps.conf:system/etc/gps_debug.conf
-
-# Release tools
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/releasetools.hi3660.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/releasetools.hi3660.sh
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
