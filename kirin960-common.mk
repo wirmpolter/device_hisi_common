@@ -113,6 +113,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libshims_hisupl
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.hi3660
+
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/ld.config.26.txt:system/etc/ld.config.26.txt \
