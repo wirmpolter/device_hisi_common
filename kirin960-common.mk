@@ -111,7 +111,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshims_hisupl
+    libshims_hisupl \
+    libshims_hwsmartdisplay_jni
 
 # USB
 PRODUCT_PACKAGES += \
