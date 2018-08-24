@@ -1,1 +1,3 @@
 type proc_bootdevice, fs_type, proc_type;
+type cust_data_file, coredomain_socket, core_data_file_type, data_file_type, file_type;
+type teecd_data_file, core_data_file_type, data_file_type, file_type;
