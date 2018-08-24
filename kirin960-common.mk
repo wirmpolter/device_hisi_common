@@ -25,15 +25,9 @@ $(call inherit-product-if-exists, vendor/gapps/config.mk)
 # Inherit prebuilt GApps
 TARGET_GAPPS_ARCH := arm64
 
-# APN configs
-ifneq ($(TARGET_AOSP_BASED),)
-PRODUCT_COPY_FILES += \
-        device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
-endif
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay 
+    $(LOCAL_PATH)/overlay
 
 # Device init scripts
 PRODUCT_PACKAGES += \
@@ -122,4 +116,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/ld.config.26.txt:system/etc/ld.config.26.txt \
     $(LOCAL_PATH)/vndk-compat/llndk.libraries.26.txt:system/etc/llndk.libraries.26.txt \
-    $(LOCAL_PATH)/vndk-compat/vndksp.libraries.26.txt:system/etc/vndksp.libraries.26.txt
+    $(LOCAL_PATH)/vndk-compat/vndksp.libraries.26.txt:system/etc/vndksp.libraries.26.txt \
+    $(LOCAL_PATH)/vndk-compat/ld.config.27.txt:system/etc/ld.config.27.txt
