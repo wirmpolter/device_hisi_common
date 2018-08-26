@@ -1,0 +1,7 @@
+[
+  {
+    "repository":  "wirmpolter/proprietary_vendor_kirin960-common",
+    "target_path": "vendor/huawei/kirin960-common",
+    "branch": "9"
+  }
+]
